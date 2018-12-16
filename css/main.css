@@ -1,6 +1,4 @@
 body, html {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
 }
@@ -21,6 +19,8 @@ header, footer, section, article, div {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -30,6 +30,11 @@ header, footer, section, article, div {
  */
 .soft-white {
     color: #fff0ee;   
+}
+
+/* always use full width of the image*/
+.img-responsive {
+  width: 100%;
 }
 
 /*
@@ -167,7 +172,6 @@ main {
   text-decoration: none;
   color: #616161;
   padding: 1.5em;
-  font-size: 2.5em;
 }
 
 .project-link:hover {
@@ -183,17 +187,13 @@ main {
 
 footer {
   border-top: 1px solid #E0E0E0;
-  padding: 1em;
+  padding: 1% 0 2% 0;
   width: 100%;
 }
 
 .footer__inner {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-social {
-  vertical-align: bottom;
 }
 
 .social-links {
